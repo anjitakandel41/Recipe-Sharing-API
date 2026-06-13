@@ -342,7 +342,7 @@ Recipe Published Successfully
 Body:
 
 ```text
-Your recipe has been published successfully.
+Your recipe has been published successfully.Thank you for sharing your delicious recipe with us! Happy Cooking!
 ```
 
 ---
@@ -375,12 +375,16 @@ python manage.py runserver
 ![Swagger UI 2](Screenshots/swagger2.png)
 ![Swagger UI 3](Screenshots/swagger3.png)
 ![Swagger UI 1](Screenshots/swagger1.png)
+
+
 ## JWT Token Generation
 ![JWT Authentication](Screenshots/token1.png)
 ![JWT Authentication](Screenshots/token.png)
 
+
 ## Email Sent Successfully
 ![Email Confirmation](Screenshots/email.png)
+
 
 ## Jazzmin Admin Panel
 ![Jazzmin Admin](Screenshots/Admin.png)
