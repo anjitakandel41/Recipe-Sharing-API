@@ -387,10 +387,5 @@ python manage.py migrate
 python manage.py runserver
 
 
-## Jazzmin Admin Panel
-![Jazzmin Admin](Screenshots/Admin.png)
-![Jazzmin Admin 2](Screenshots/admin2.png)
-![Jazzmin Admin 3](Screenshots/admin3.png)
-![Jazzmin Admin 4](Screenshots/admin_(2).png)
 
 
