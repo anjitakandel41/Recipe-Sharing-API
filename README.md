@@ -125,29 +125,6 @@ Final response sent back to the client.
 
 # ⚙️ CRUD Operations using ModelViewSet
 
-flowchart LR
-    A[Client Request] --> B[URL Router]
-    B --> C[ModelViewSet]
-    C --> D{HTTP Method}
-
-    D -->|GET| E[List or Retrieve]
-    D -->|POST| F[Create]
-    D -->|PUT| G[Update]
-    D -->|PATCH| H[Partial Update]
-    D -->|DELETE| I[Delete]
-
-    E --> J[Serializer]
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-
-    J --> K[Model]
-    K --> L[(Database)]
-    L --> K
-    K --> M[JSON Response]
-
-
 This project uses DRF's `ModelViewSet` for both recipes and categories.
 
 ```python
@@ -260,21 +237,6 @@ http://127.0.0.1:8000/redoc/
 - Easy integration with serializers
 - Easy integration with filtering
 - Cleaner and more maintainable code
-
-
-# Admin Panel 
-flowchart LR
-
-A[Administrator] --> B[Login]
-B --> C[Django Admin]
-C --> D[Category Management]
-C --> E[Recipes Management]
-
-D --> F[(Database)]
-E --> F
-
-F --> D
-F --> E
 
 
 # Django Admin Panel
@@ -414,17 +376,16 @@ python manage.py runserver
 
 ```markdown
 ![Swagger UI](Screenshots/swagger.png)
-(Screenshots/swagger2.png)
-(Screenshots/swagger3.png)
-(Screenshots/swagger1.png)
-
+![Swagger UI 2](Screenshots/swagger2.png)
+![Swagger UI 3](Screenshots/swagger3.png)
+![Swagger UI 1](Screenshots/swagger1.png)
 ```
 
 ## JWT Token Generation
 
 ```markdown
 ![JWT Authentication](Screenshots/token1.png)
-(Screenshots/token.png)
+![JWT Authentication](Screenshots/token.png)
 ```
 
 
@@ -438,8 +399,8 @@ python manage.py runserver
 
 ```markdown
 ![Jazzmin Admin](Screenshots/Admin.png)
-(Screenshots/admin2.png)
-(Screenshots/admin3.png)
-(Screenshots/admin (2).png)
+![Jazzmin Admin 2](Screenshots/admin2.png)
+![Jazzmin Admin 3](Screenshots/admin3.png)
+![Jazzmin Admin 4](Screenshots/admin_(2).png)
 ```
 
