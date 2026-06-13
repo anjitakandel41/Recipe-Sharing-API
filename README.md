@@ -2,7 +2,6 @@
 
 A secure and scalable RESTful API built using **Django** and **Django REST Framework (DRF)**. This project allows users to create, manage, and explore recipes with image uploads, category organization, search and filtering features, and email notifications.
 
-Users can register and authenticate using JWT tokens, manage their own recipes, and browse recipes created by others.
 
 ---
 
