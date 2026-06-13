@@ -6,4 +6,4 @@ from .models import Recipe
 @receiver(post_save,sender=Recipe)
 def send_recipe_email(sender,instance,created,**kwargs):
     if created and instance.author.email:
-        send_mail('Recipe Published Successfully','Your recipe has been published.',None,[instance.author.email],fail_silently=True)
+        send_mail('Recipe Published Successfully',' Hi ,Your recipe has been published.''Thank you for sharing your delicious recipe with us! Happy Cooking!',None,[instance.author.email],fail_silently=True)
