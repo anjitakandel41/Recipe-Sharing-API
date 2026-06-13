@@ -72,15 +72,15 @@ DEFAULT_FROM_EMAIL=your_email@gmail.com
 
 Run migrations.
 
-python manage.py makemigrations
-python manage.py migrate
+uv run python manage.py makemigrations
+uv run python manage.py migrate
 
 Create a superuser.
 
-python manage.py createsuperuser
+uv run python manage.py createsuperuser
 
 ## Run the Development Server
-python manage.py runserver
+uv rn python manage.py runserver
 
 The application will be available at:
 
@@ -364,28 +364,53 @@ Your recipe has been published successfully.Thank you for sharing your delicious
 ## Email Sent Successfully
 ![Email Confirmation](Screenshots/email.png)
 
-## Generate Requirements File
-
-To export dependencies:
-
-pip freeze > requirements.txt
-
-To install dependencies after cloning:
-
-pip install -r requirements.txt
-
 ## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
 git clone <repo_url>
 cd recipe-sharing-api
+```
 
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate
+### 2. Create and activate a virtual environment
 
-pip install -r requirements.txt
+```bash
+uv venv
+```
 
-python manage.py migrate
-python manage.py runserver
+Activate it:
 
+- **Windows**
+  ```bash
+  .venv\Scripts\activate
+  ```
 
+- **macOS/Linux**
+  ```bash
+  source .venv/bin/activate
+  ```
 
+### 3. Install dependencies
 
+```bash
+uv pip install -r requirements.txt
+```
+
+### 4. Apply migrations
+
+```bash
+uv run python manage.py migrate
+```
+
+### 5. Start the development server
+
+```bash
+uv run python manage.py runserver
+```
+
+Open your browser and visit:
+
+```
+http://127.0.0.1:8000/
+```
