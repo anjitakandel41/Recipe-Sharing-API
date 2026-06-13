@@ -153,10 +153,8 @@ Request:
     "password": "your_password"
 }
 ```
-```markdown
 ![JWT Authentication](Screenshots/api-token.png)
 
-```
 Response:
 
 ```json
@@ -373,34 +371,21 @@ python manage.py migrate
 python manage.py runserver
 
 ## Swagger Documentation
-
-```markdown
 ![Swagger UI](Screenshots/swagger.png)
 ![Swagger UI 2](Screenshots/swagger2.png)
 ![Swagger UI 3](Screenshots/swagger3.png)
 ![Swagger UI 1](Screenshots/swagger1.png)
-```
-
 ## JWT Token Generation
-
-```markdown
 ![JWT Authentication](Screenshots/token1.png)
 ![JWT Authentication](Screenshots/token.png)
-```
-
 
 ## Email Sent Successfully
-
-```markdown
 ![Email Confirmation](Screenshots/email.png)
-```
 
 ## Jazzmin Admin Panel
-
-```markdown
 ![Jazzmin Admin](Screenshots/Admin.png)
 ![Jazzmin Admin 2](Screenshots/admin2.png)
 ![Jazzmin Admin 3](Screenshots/admin3.png)
 ![Jazzmin Admin 4](Screenshots/admin_(2).png)
-```
+
 
