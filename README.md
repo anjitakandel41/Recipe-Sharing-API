@@ -181,7 +181,7 @@ Request:
 ```
 
 
-# 📚 API Documentation
+#  API Documentation
 
 Swagger UI:
 
@@ -197,7 +197,7 @@ http://127.0.0.1:8000/redoc/
 
 ---
 
-# 📌 API Endpoints
+#  API Endpoints
 
 ## Recipes
 
@@ -211,6 +211,9 @@ http://127.0.0.1:8000/redoc/
 | DELETE | `/api/recipes/{id}/` | Delete recipe   |
 
 ---
+![Swagger UI 3](Screenshots/swagger3.png)
+![Swagger UI 1](Screenshots/swagger1.png)
+
 
 ## Categories
 
@@ -222,8 +225,9 @@ http://127.0.0.1:8000/redoc/
 | PUT    | `/api/categories/{id}/` | Update category   |
 | DELETE | `/api/categories/{id}/` | Delete category   |
 
----
----
+![Swagger UI](Screenshots/swagger.png)
+![Swagger UI 2](Screenshots/swagger2.png)
+
 ##  Why Use ModelViewSet?
 
 ## Benefits
@@ -253,6 +257,7 @@ Administrators can:
 
 The admin panel is enhanced using Jazzmin to provide a modern dashboard.
 
+
 ## RecipeAdmin Customization
 
 The Django admin is customized using ModelAdmin features:
@@ -264,6 +269,12 @@ readonly_fields → Prevents modification of specific fields
 inlines → Displays related models in the same page
 
 These improvements make data management faster and more user-friendly.
+
+## Jazzmin Admin Panel
+![Jazzmin Admin](Screenshots/Admin.png)
+![Jazzmin Admin 2](Screenshots/admin2.png)
+![Jazzmin Admin 3](Screenshots/admin3.png)
+![Jazzmin Admin 4](Screenshots/admin_(2).png)
 
 ## JWT Authentication
 
@@ -290,6 +301,10 @@ POST /api/token/refresh/
 These tokens must be included in the request header:
 
 Authorization: Bearer <your_token>
+
+## JWT Authentication
+![JWT Authentication](Screenshots/token1.png)
+![JWT Authentication](Screenshots/token.png)
 
 ## Recipe Image Upload
 
@@ -346,7 +361,8 @@ Your recipe has been published successfully.Thank you for sharing your delicious
 ```
 
 ---
-
+## Email Sent Successfully
+![Email Confirmation](Screenshots/email.png)
 
 ## Generate Requirements File
 
@@ -369,21 +385,6 @@ pip install -r requirements.txt
 
 python manage.py migrate
 python manage.py runserver
-
-## Swagger Documentation
-![Swagger UI](Screenshots/swagger.png)
-![Swagger UI 2](Screenshots/swagger2.png)
-![Swagger UI 3](Screenshots/swagger3.png)
-![Swagger UI 1](Screenshots/swagger1.png)
-
-
-## JWT Token Generation
-![JWT Authentication](Screenshots/token1.png)
-![JWT Authentication](Screenshots/token.png)
-
-
-## Email Sent Successfully
-![Email Confirmation](Screenshots/email.png)
 
 
 ## Jazzmin Admin Panel
