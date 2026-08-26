@@ -1,0 +1,30 @@
+Hi {{ author_name }},
+
+Your recipe has been published successfully. Here is a copy for your records.
+
+{{ recipe.title|upper }}
+{{ separator }}
+
+Category      : {{ category_name }}
+Cooking time  : {{ cooking_time_display }}
+Published on  : {{ recipe.created_at|date:"F j, Y, g:i a" }}
+{% if recipe.description %}
+{{ recipe.description }}
+{% endif %}
+INGREDIENTS
+-----------
+{% for item in ingredients %}  - {{ item }}
+{% empty %}  No ingredients listed.
+{% endfor %}
+PREPARATION
+-----------
+{% for step in steps %}  {{ forloop.counter }}. {{ step }}
+{% empty %}  No steps listed.
+{% endfor %}{% if has_photo %}
+The recipe photo is attached to this email.
+{% endif %}
+Thank you for sharing your delicious recipe with us. Happy cooking!
+
+--
+Recipe #{{ recipe.pk }} | {{ site_name }}
+This is an automated message.

@@ -150,6 +150,9 @@ EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS", default=True)
 
 DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="")
 
+# Branding (used in outgoing emails)
+SITE_NAME = env("SITE_NAME", default="Recipe Sharing API")
+
 # Jazzmin
 JAZZMIN_SETTINGS = {
     "site_title": "Recipe API",
